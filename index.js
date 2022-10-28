@@ -48,7 +48,7 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
-var sayı = 1999;
+
 
 
 
@@ -68,7 +68,7 @@ function carpma(a,b){
 
 
 }
-console.log (carpma(a,b));
+console.log (carpma(1,2));
 
 
 
@@ -169,10 +169,12 @@ Aşağdakileri milDonusturucu fonksiyonunu kullanarak yapın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function milDonusturucu(kilometre){
+  let mil = (kilometre / 0.6214);
+  return mil ;
 
+}
+ console.log(milDonusturucu(3));
 
 
 //Görev 4b - Santimetreden Feet
