@@ -61,15 +61,14 @@ Aşağıdakileri yapın:
    3. a ve b'yi çarpıp, sonucu dönün
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-  var a = 2;
-  var b = 3;
+function carpma(a,b){
+  let sonuc=(a*b);
+   return sonuc ;
   
-  console.log(a*b);
+
 
 }
-console.log();
+console.log (carpma(a,b));
 
 
 
@@ -83,16 +82,13 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
- function kopeginYasi () {
-  /*
-  for (let i=0; i<100; i++){
-     console.log("insan");    
-   }  
-   return kopeginYasi[];
-   */
+ function kopeginYasi (insaninYasi) {
+  let kopek = (insaninYasi*7);
+  return kopek ;
+
    }
-  console.log(kopeginYasi());
- 
+  
+ console.log(kopeginYasi(10));
 
 
 /* Görev 3 */
@@ -187,11 +183,9 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 3. feet değerini geri dönün
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  const feet = Math.floor(Math.random() / 0.3);
- console.log(feet)
- var cm = Math.floor(Math.random() / 0.3);
-console.log(cm); 
+function feetDonusturucu(cm){
+  const feet =(cm / 30.48);
+  return feet ;
  
 }
 
