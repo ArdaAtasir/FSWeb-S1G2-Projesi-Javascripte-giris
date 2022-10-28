@@ -48,7 +48,7 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
-
+var sayı = 1999;
 
 
 
@@ -63,7 +63,13 @@ Aşağıdakileri yapın:
 
 function carpma(/*buraya kodunu yazabilirsin*/){
   /*buraya kodunu yazabilirsin*/
+  var a = 2;
+  var b = 3;
+  
+  console.log(a*b);
+
 }
+console.log();
 
 
 
@@ -77,10 +83,16 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
-
+ function kopeginYasi () {
+  /*
+  for (let i=0; i<100; i++){
+     console.log("insan");    
+   }  
+   return kopeginYasi[];
+   */
+   }
+  console.log(kopeginYasi());
+ 
 
 
 /* Görev 3 */
@@ -104,9 +116,50 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yapın.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 
-function oyun(oyuncu, bilgisayar){
-  /*buraya kodunu yazabilirsin*/
+function bilgisayarHamlesi(){
+  var hamleler = ["Taş","Kağıt","Makas"]
+  var randomSayı = Math.floor(Math.random()*3);
+  return hamleler[randomSayı];
+  
 }
+bilgisayarHamlesi();
+
+function oyun2(oyuncu, bilgisayar){
+  if(oyuncu == "Makas" && bilgisayar == "Kağıt") {
+    return "Kazandın!";
+  }
+if(oyuncu =="Kağıt" && bilgisayar == "Kağıt");{
+  return "Berabere";
+}
+}
+ //
+function bilgisayarSecimi() {
+  var hamleler = ["Taş", "Kağıt", "Makas"];
+  var randomSayi = Math.floor(Math.random()*3);
+  return hamleler[randomSayi];
+}
+ bilgisayarSecimi()
+
+function oyun(oyuncu, bilgisayar){
+  if( oyuncu =="Kağıt" && bilgisayar == "Taş") {
+    return "Kazandın!";
+}
+  else if( oyuncu == "Makas" && bilgisayar == "Kağıt") {
+    return "Kazandın!";
+  }
+  else if(oyuncu =="Taş" && bilgisayar == "Makas") {
+    return "Kazandın!";
+  }
+  else if(oyuncu == bilgisayar ) {
+    return "Beraberlik!";
+  }
+    else{
+      return "Kaybettin!";
+  }
+}
+ console.log(oyun( bilgisayarSecimi(),  bilgisayarSecimi()));
+
+
 
 
 
@@ -135,8 +188,14 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 */
 
 function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+  const feet = Math.floor(Math.random() / 0.3);
+ console.log(feet)
+ var cm = Math.floor(Math.random() / 0.3);
+console.log(cm); 
+ 
 }
+
+console.log(feetDonusturucu(1));
 
 
 
@@ -153,10 +212,15 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
-      /*buraya kodunu yazabilirsin*/
-}
 
+function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
+
+  var a = 'küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok';
+
+  for (var i=str;0; i--) {
+    console.log(i + a);
+  }
+}
 
 /* Görev 6 : Not Hesaplayıcı */
 
@@ -195,9 +259,8 @@ function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
   /*buraya kodunu yazabilirsin*/
 }
 
-
-
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
+
 function sa(){
   console.log('Kodlar çalışıyor');
   return 'as';
